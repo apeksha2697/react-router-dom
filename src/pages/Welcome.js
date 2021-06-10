@@ -1,10 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Route } from 'react-router-dom';
 
 const Welcome = () => {
   return (
-    <div>
-      Welcome page
-    </div>
+    <section>
+      <h1>
+        Welcome page
+      </h1>
+      <Route path='/welcome/new-user'>
+        <h1>Welcome new user</h1>
+      </Route>
+    </section>
   )
 }
 
